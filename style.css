@@ -1,0 +1,159 @@
+/*Landing Page*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page-header {
+	height: 100vh;
+	background-image: url("Images/landing.jpg");
+	background-size: cover;
+}
+
+.page-header:after {
+	animation: grain 1s steps(5) infinite;
+	background-image: url("Images/grains.png");
+	content: "";
+	height: 300%;
+	left: -50%;
+	opacity: 0.25;
+	position: fixed;
+	top: -110%;
+	width: 300%;
+}
+
+@keyframes grain {
+	0%, 100% { transform: translate(0, 0); }
+	10% { transform: translate(-5%, -10%); }
+	20% { transform: translate(-15%, 5%); }
+	30% { transform: translate(7%, -25%); }
+	40% { transform: translate(-5%, 25%); }
+	50% { transform: translate(-15%, 10%); }
+	60% { transform: translate(15%, 0%); }
+	70% { transform: translate(0%, 15%); }
+	80% { transform: translate(3%, 35%); }
+	90% { transform: translate(-10%, 10%); }
+}
+
+.content {
+	position: absolute;
+	top: 48%;
+	left: 35%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-family: Poppins;
+	z-index: 1;
+}
+
+.content h1 {
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 0;
+	color: #fff;
+	font-family: Orbitron;
+}
+
+.content p {
+	margin-top: 0;
+	width: 80%;
+	font-weight: lighter;
+}
+
+.btn {
+	margin-top: 64px;
+}
+
+.content a {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 4px;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	padding: 16px 42px;
+}
+
+.delay-1 {
+	animation-delay: 2s;
+}
+
+.delay-2 {
+	animation-delay: 2.2s;
+}
+
+.delay-3 {
+	animation-delay: 2.4s;
+}
+
+/*Main Page*/
+
+.wrapper {
+	background-image: url("Images/main.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.wrapper {
+	font-family: Poppins;
+	font-size: 18px;
+}
+
+#landing-page h1 {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	letter-spacing: 20px;
+	color: black;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	font-family: Orbitron;
+}
+
+.wrapper a {
+	text-decoration: none;
+}
+
+/*Added when page scrolled*/
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}
+
+/*Navbar*/
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background: #000;
+}
+
+nav li {
+	display: inline-block;
+	position: relative;
+	float: left;
+	left: 50%;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+nav li a {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+section {
+	height: 100vh;
+}
+
+
+
